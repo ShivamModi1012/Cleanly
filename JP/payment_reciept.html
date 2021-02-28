@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <title>Payment Receipt</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+      <style>
+      	body{
+  padding: 10px 10px 10px 10px;
+  position:absolute;
+  height: 900px;
+  font-family: 'Roboto Slab', serif;
+  width: 600px;
+  font-weight: normal;
+ margin-top: 75px;
+ background-color: seagreen;
+}
+
+.container{
+  background-color:#f9f9f9;
+  position: absolute;
+  width: 550px;
+  margin-left: 100px;
+}
+
+span{
+  display:block;
+}
+
+h2{
+   color: #1aa377;
+
+   position:relative;
+   text-align:center;
+}
+
+.items{
+  padding-left:20px;
+  padding-right:20px;
+  /* font-size: 15px; */
+
+  color:#8b8e8d;
+ 
+}
+
+.item p{
+  position:relative;
+  display:inline-block;
+}
+
+.item span{
+  
+   position:relative;
+   display:inline-block;
+   float:right;
+   padding-top:16px;
+}
+
+
+.item{
+     border-bottom: 1px solid #c9c9c9;
+}
+
+.noline{
+  border-bottom:none;
+}
+
+.total{
+   background-color:#ededed;
+}
+
+.total{
+  padding: 10px 20px 10px 20px; 
+  font-size: 17px;
+  color:#48b9a0;
+}
+
+.print{
+  background-color:#1aa377;
+  color:#ededed;
+  text-align:center;
+  padding:35px; 
+}
+
+
+.totalText{
+  
+  padding: 3px 3px 3px 3px; 
+  display:inline-block;
+}
+
+.totalVal{
+   padding: 3px 3px 3px 3px; 
+   float:right;
+}
+
+.upperItems{
+  display:block;
+  padding:0px 0px 10px 10px; 
+  text-align:center;
+}
+.staple{
+  height:6px;
+  width:50px;
+  display:inline-block;
+  position:relative;
+top
+  border-left: 4px solid #dbdbdb;
+	border-right: 4px solid #dbdbdb;
+  border-top: 5px solid #dbdbdb;
+  
+}
+
+
+.pagefold{
+  height:0px;
+  width:0px;
+  display:inline-block;
+  background-color:#1aa377;
+  position:relative;
+  float:right;
+	border-left: 25px solid #f2f2f2;
+  border-bottom: 25px solid #f2f2f2;
+	border-right: 25px solid #e2e2e2;
+  border-top: 25px solid #e2e2e2;
+}
+.side{
+	margin-left: 1000px;
+	position: relative;
+	margin-top: 100px;
+}
+#last{
+	width: 250px;
+	height: 100px;
+}
+</style>
+    </head>
+    <body>
+      <div class="container">
+         <div class="upperItems">
+         <span class="staple"> </span>
+         <span class="pagefold"> </span>
+      </div>
+    
+     <h2>Receipt of Payment</h2>
+		<div class="items" >
+		   <div class="item" >
+		    <p>Shirts</p>
+			    <span>Rs250</span>			
+		   </div>
+		   <div class="item">
+		    <p>Blazer</p>
+			<span>Rs500</span>			
+		   </div>
+		   <div class="item">
+		    <p>Trouser</p>
+			<span>Rs300</span>			
+		   </div>
+		   <div class="item noline">
+		    <p>Bedsheet</p>
+			<span>Rs275</span>			
+		   </div>
+		</div>
+       
+      <div class="total" >
+           <div>
+		          <div class="totalText">Sub Total:</div>
+			        <div class="totalVal" >Rs1325</div>			
+		      </div> 
+          <div>
+		          <div class="totalText" >VAT(20%):</div>
+			        <div class="totalVal" >Rs530</div>			
+		      </div> 
+        <div>
+		          <div class="totalText" >Total:</div>
+			        <div class="totalVal" >Rs1855</div>			
+		      </div> 
+      </div>
+      
+      <div class="print">
+
+          <i class="fa fa-print"></i>
+           Print a copy
+       
+       
+      </div>
+      </div>
+      <div class="side"><img src="qrcode.png">
+      	<p><span id="last">Please save this QR-Code for future reference..
+      		Thank You.
+      		Visit Again...</span>
+      	</p></div>
+     
+      
+      
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="lr.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-device-width: 320px) and (max-device-width: 500px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-device-width: 501px)"
+      href="css/main.css"
+    />
+
+  </head>
+  <body>     
+
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container"></div>
+
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <div class="social-container"></div>
+
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forgot your password?</a>
+          <button>
+            <a style="text-decoration: none">Sign In</a>
+          </button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        <a target="_blank" href="about.html">Learn more about our team</a>
+      </p>
+    </footer>
+    <div class="loginApp">
+      <header>Infinite Loop</header>
+      <h1>Login</h1>
+      <table cellpadding="5">
+        <tr>
+          <th>Email :</th>
+          <th><input type="email" placeholder="Login ID" /></th>
+        </tr>
+        <tr>
+          <th>Password :</th>
+          <th><input type="password" placeholder="Password" /></th>
+        </tr>
+        <tr>
+          <th colspan="2"><a class="forgot">Forgot Password ?</a></th>
+        </tr>
+      </table>
+
+      <button><a href="babyStats.html">Sign In</a></button>
+      <button><a>Sign Up</a></button>
+    </div>
+    <script src="app.js"></script>
+       <div class="w3-content w3-section" style="max-width:10000px">
+  <img class="mySlides w3-animate-right" src="C:\Users\Aditi Gupta\Desktop\Thaper University\Laundry.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="C:\Users\Aditi Gupta\Desktop\Thaper University\Home.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="C:\Users\Aditi Gupta\Desktop\Thaper University\Woman.jpg" style="width:100%">
+  
+</div>
+        <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script> 
+  </body>
+</html>

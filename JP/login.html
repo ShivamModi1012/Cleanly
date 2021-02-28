@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title> Login Form  </title>
+    <link rel="stylesheet" type="text/css" href="login.css">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    #r{
+        position: relative;
+    }
+</style>
+</head>
+    <body>
+        <div class="w3-content w3-section" style="max-width:10000px">
+  <img class="mySlides w3-animate-right" src="Laundry.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="Home.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="Woman.jpg" style="width:100%">
+  
+</div>
+        <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+    <div class="login-box">
+    <img src="img2.png" class="avatar" id="r">
+        <h1>Login Here</h1>
+            <form action="main.html">
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter email" required style="color:white;">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password" required style="color:white;">
+            <input type="submit" name="submit" value="Login"><br>
+            <a href="#">Forget Password</a> <br>
+            <a href="index.html">Click here to make new Account!!</a>   
+            </form>
+        
+        
+        </div>
+    
+    </body>
+</html>
